@@ -7,7 +7,7 @@ CREATE TABLE Estudantes(
   	senha VARCHAR(50) NOT NULL,  
 );
 
-create table Cursos(
+CREATE TABLE Cursos(
 	Curso_id VARCHAR(20) PRIMARY KEY,
  	Curso_nome VARCHAR(50) not NULL,
   	Credito_aula INT NOT NULL,
