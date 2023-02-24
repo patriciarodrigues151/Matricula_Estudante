@@ -29,6 +29,6 @@ create table Cursos(
 INSERT INTO Estudante(Estudante_id, Nome, Sobrenome, Endereço, Email, Senha) VALUES (11315590, 'Patrícia', 'da Silva Rodrigues','patriciiarodrigs@gmail.com', '12345678910');
 
 Insert into Curso(Curso_id, Nome, Credito_aula, Credito_trabalho, Docente, Instituto);
- Values ('MAC121', 'Algoritmos e Estruturas de dados II', 4, 2, 'Carlos Ferreira', 'Instituto de Matemática e Estatísticas');
+ Values ('MAC121', 'Algoritmos e Estruturas de dados II', 4, 2, 'Carlos Ferreira', 'Instituto de Matemática e Estatística');
  
  INSERT INTO MatriculaCurso(Matricula_id, Estudante_id, Curso_id, Data_Matricula) VALUES (24, 11315590, 'MAC121', '2020-06-02');
