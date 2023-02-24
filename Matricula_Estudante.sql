@@ -9,22 +9,21 @@ CREATE TABLE Estudantes(
 
 CREATE TABLE Cursos(
 	Curso_id VARCHAR(20) PRIMARY KEY,
- 	Curso_nome VARCHAR(50) not NULL,
-  	Credito_aula INT NOT NULL,
-  	Credito_Trabalho INT NOT NULL,
-  	Docente VARCHAR(50) NOT NULL,
-  	Instituto VARCHAR(50) NOT NULL,
+	Curso_nome VARCHAR(50) not NULL,
+	Credito_aula INT NOT NULL,
+	Credito_Trabalho INT NOT NULL,
+	Docente VARCHAR(50) NOT NULL,
+	Instituto VARCHAR(50) NOT NULL,
   );
   
-  
-  CREATE TABLE MatriculaCurso(
-  	Matricula_id INT PRIMARY KEY,
-    Estudante_id INT NOT NULL,
-    Curso_id INT NOT NULL,
-    Data_Matricula DATE NOT NULL,
-    foreign key (Estudante_id) REFERENCES  Estudante(Estudante_id),
-    FOREIGN KEY (Curso_id) REFERENCES Curso(Curso_id),
-    );
+CREATE TABLE MatriculaCurso(
+	Matricula_id INT PRIMARY KEY,
+	Estudante_id INT NOT NULL,
+	Curso_id INT NOT NULL,
+	Data_Matricula DATE NOT NULL,
+	foreign key (Estudante_id) REFERENCES  Estudante(Estudante_id),
+	FOREIGN KEY (Curso_id) REFERENCES Curso(Curso_id),
+);
   
 INSERT INTO Estudante(Estudante_id, Nome, Sobrenome, Endereço, Email, Senha) VALUES (11315590, 'Patrícia', 'da Silva Rodrigues','patriciiarodrigs@gmail.com', '12345678910');
 
